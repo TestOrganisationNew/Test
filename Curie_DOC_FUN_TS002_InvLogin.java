@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Properties;
-import org.apache.log4j.Logger;
+
 import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.By;
 import org.testng.AssertJUnit;
@@ -96,7 +96,7 @@ private void writeexcelresult(String status, int rowno1) throws IOException
 	     	for (int i = 0; i < rowCount; i++) 
 	     	{
 	    	 //Loop over all the rows
-	    	 Row row = ElloraSheet.getRow(i+1);
+
 	    	 //Create a loop to print cell values in a row
 	    	 for (int j = 0; j < row.getLastCellNum(); j++) 
 	    	 {
