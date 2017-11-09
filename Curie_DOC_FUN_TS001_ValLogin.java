@@ -31,7 +31,7 @@ public class Curie_DOC_FUN_TS001_ValLogin extends OpenURL
 	        prop.load(fis);
 	     
 	        //To validate the title of URL
-	        AssertJUnit.assertEquals(prop.getProperty("Title"),driver.getTitle());
+
 	       
 	        //Calling Utility method for elements xpath and screenshots
 	        Utility util = new Utility(driver, prop, logger);      
@@ -52,7 +52,8 @@ public class Curie_DOC_FUN_TS001_ValLogin extends OpenURL
 	        util.perform1("xpath","click","btn_doctor_menu","");
 	        WebElement mailid=driver.findElement(By.xpath(prop.getProperty("menu_Mailid")));
 	        logger.info("The mailId displayed is:------>" +"["+ mailid.getText() +"]");
-	        
+
+	   // not neddedd...
 	        //Write Excel
 			BigDecimal bd = new BigDecimal(rowno);
 	        int rowno1 = bd.intValue();
