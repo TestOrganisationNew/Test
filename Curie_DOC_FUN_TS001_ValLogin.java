@@ -44,7 +44,7 @@ public class Curie_DOC_FUN_TS001_ValLogin extends OpenURL
 	        
 	        //To click on Username textbox to enter username and password:
 	        util.perform1("id","settext","txt_username",username);
-	        util.perform1("id","settext","txt_password",password);
+
 	        logger.info("Login Data Entered :--------------> " + "[" + username +"  , " + password +"]");
 	        Thread.sleep(5000);	        
 	        util.perform1("id","click","btn_login","");  
